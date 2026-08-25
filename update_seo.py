@@ -138,7 +138,7 @@ def update_html_files():
         img_match = re.search(r'<meta\s+property=["\']og:image["\']\s+content=["\'](.*?)["\']', head_html, re.IGNORECASE)
         img = img_match.group(1) if img_match else "https://peralatankantor.web.id/assets/img/bg-hero-maroon-gradasi.webp"
         
-        assets = "assets/" if "/" not in filename and "\\\\" not in filename else "../assets/"
+        assets = "assets/" if "/" not in filename.replace('\\', '/') else "../assets/"
         
         new_head = template.format(
             CANONICAL=canonical,
