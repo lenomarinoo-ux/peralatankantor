@@ -350,6 +350,26 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Blog Hari 3: Lemari Arsip -->
+  <url>
+    <loc>https://peralatankantor.web.id/blog/cara-memilih-lemari-arsip/</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://peralatankantor.web.id/blog/pentingnya-manajemen-arsip-fisik/</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://peralatankantor.web.id/blog/tips-merapikan-dokumen-kantor/</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Blog Hari 2: Kursi Kantor -->
   <url>
     <loc>https://peralatankantor.web.id/blog/cara-memilih-kursi-kantor-ergonomis/</loc>
