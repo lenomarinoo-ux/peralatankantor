@@ -137,7 +137,7 @@
 
     <section class="section" style="padding:80px 0;">
 <div class="container" data-aos="fade-up">
-        <div class="row g-4">
+        <div class="row g-4" id="blog-list-container">
 
           <!-- Batch Hari 4: Meja Kantor -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up">
@@ -513,6 +513,145 @@
     </a>
   </div>
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+  <style>
+  .custom-pagination {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 60px;
+  }
+  .custom-pagination .page-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      border: 1px solid #e2e8f0;
+      color: #1e293b;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      background: #ffffff;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  }
+  .custom-pagination .page-link:hover:not(.active):not(.disabled) {
+      background-color: #fef8f9;
+      border-color: #7A0C1F;
+      color: #7A0C1F;
+      box-shadow: 0 4px 8px rgba(122, 12, 31, 0.1);
+  }
+  .custom-pagination .page-link.active {
+      background-color: #7A0C1F;
+      color: #ffffff;
+      border-color: #7A0C1F;
+      box-shadow: 0 4px 10px rgba(122, 12, 31, 0.25);
+  }
+  .custom-pagination .page-link.disabled {
+      color: #cbd5e1;
+      cursor: not-allowed;
+      background-color: #f8fafc;
+      border-color: #f1f5f9;
+      box-shadow: none;
+  }
+  </style>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const container = document.getElementById('blog-list-container');
+    if (!container) return;
+    
+    // Select only the article columns
+    const items = Array.from(container.children).filter(child => child.classList.contains('col-lg-4'));
+    const itemsPerPage = 30; // Limit to 30 items per page
+    
+    // HANYA MUNCUL JIKA ARTIKEL LEBIH DARI 30
+    if (items.length <= itemsPerPage) {
+       // Biarkan tampil semua tanpa pagination
+       return;
+    }
+
+    const totalPages = Math.ceil(items.length / itemsPerPage);
+    let currentPage = 1;
+
+    // Create pagination container
+    const paginationContainer = document.createElement('div');
+    paginationContainer.className = 'custom-pagination';
+    paginationContainer.id = 'blogPagination';
+    container.parentNode.insertBefore(paginationContainer, container.nextSibling);
+
+    function renderPage(page) {
+      currentPage = page;
+      
+      // Hide all items
+      items.forEach(item => {
+        item.style.display = 'none';
+        item.classList.remove('aos-animate');
+      });
+      
+      // Show items for the current page
+      const start = (page - 1) * itemsPerPage;
+      const end = start + itemsPerPage;
+      items.slice(start, end).forEach(item => {
+        item.style.display = 'block';
+        setTimeout(() => item.classList.add('aos-animate'), 50);
+      });
+      
+      renderPagination();
+    }
+
+    function renderPagination() {
+      paginationContainer.innerHTML = '';
+      
+      // Prev Button
+      const prevBtn = document.createElement('a');
+      prevBtn.className = 'page-link' + (currentPage === 1 ? ' disabled' : '');
+      prevBtn.innerHTML = '<i class="bi bi-chevron-left"></i>';
+      if (currentPage > 1) {
+        prevBtn.onclick = (e) => { 
+          e.preventDefault(); 
+          renderPage(currentPage - 1); 
+          window.scrollTo({ top: container.offsetTop - 100, behavior: 'smooth' });
+        };
+      }
+      paginationContainer.appendChild(prevBtn);
+
+      // Page Numbers
+      for (let i = 1; i <= totalPages; i++) {
+        const pageBtn = document.createElement('a');
+        pageBtn.className = 'page-link' + (i === currentPage ? ' active' : '');
+        pageBtn.innerText = i;
+        if (i !== currentPage) {
+          pageBtn.onclick = (e) => { 
+            e.preventDefault(); 
+            renderPage(i); 
+            window.scrollTo({ top: container.offsetTop - 100, behavior: 'smooth' });
+          };
+        }
+        paginationContainer.appendChild(pageBtn);
+      }
+
+      // Next Button
+      const nextBtn = document.createElement('a');
+      nextBtn.className = 'page-link' + (currentPage === totalPages ? ' disabled' : '');
+      nextBtn.innerHTML = '<i class="bi bi-chevron-right"></i>';
+      if (currentPage < totalPages) {
+        nextBtn.onclick = (e) => { 
+          e.preventDefault(); 
+          renderPage(currentPage + 1); 
+          window.scrollTo({ top: container.offsetTop - 100, behavior: 'smooth' });
+        };
+      }
+      paginationContainer.appendChild(nextBtn);
+    }
+
+    renderPage(1);
+  });
+  </script>
+
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/js/main.js"></script>
