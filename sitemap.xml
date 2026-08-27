@@ -350,6 +350,26 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Blog Hari 4: Meja Kantor -->
+  <url>
+    <loc>https://peralatankantor.web.id/blog/cara-memilih-meja-kantor/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://peralatankantor.web.id/blog/desain-meja-kerja-minimalis/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://peralatankantor.web.id/blog/layout-meja-kantor-produktivitas/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Blog Hari 3: Lemari Arsip -->
   <url>
     <loc>https://peralatankantor.web.id/blog/cara-memilih-lemari-arsip/</loc>
