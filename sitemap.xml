@@ -409,6 +409,25 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Blog Hari 5: Perlengkapan Kantor -->
+  <url>
+    <loc>https://peralatankantor.web.id/blog/perlengkapan-kantor-ruang-meeting/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://peralatankantor.web.id/blog/cara-memilih-desk-organizer/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://peralatankantor.web.id/blog/perlengkapan-kantor-unik-bermanfaat/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
 
 
