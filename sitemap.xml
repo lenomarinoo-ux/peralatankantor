@@ -428,6 +428,26 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Blog Hari 8: Kursi Kantor (Lanjutan) -->
+  <url>
+    <loc>https://peralatankantor.web.id/blog/tanda-kursi-kantor-harus-diganti.html</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://peralatankantor.web.id/blog/posisi-duduk-benar-kursi-kerja.html</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://peralatankantor.web.id/blog/perbedaan-kursi-staff-manager-direktur.html</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
   <!-- Blog Hari 7: Alat Tulis Kantor -->
   <url>
     <loc>https://peralatankantor.web.id/blog/daftar-atk-kantor-sering-hilang.html</loc>
