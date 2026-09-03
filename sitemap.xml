@@ -428,6 +428,26 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Blog Hari 10: Meja Kantor (Lanjutan) -->
+  <url>
+    <loc>https://peralatankantor.web.id/blog/tips-menjaga-meja-kantor-bersih-rapi.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://peralatankantor.web.id/blog/tinggi-meja-standar-postur-ergonomis.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://peralatankantor.web.id/blog/meja-l-shape-vs-workstation-hemat-ruang.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Blog Hari 9: Lemari Arsip (Lanjutan) -->
   <url>
     <loc>https://peralatankantor.web.id/blog/mengenal-jenis-lemari-arsip.html</loc>
