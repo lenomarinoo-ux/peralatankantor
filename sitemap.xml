@@ -428,6 +428,26 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Blog Hari 11: Perlengkapan Kantor (Lanjutan) -->
+  <url>
+    <loc>https://peralatankantor.web.id/blog/pentingnya-tempat-sampah-kantor.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://peralatankantor.web.id/blog/cara-memasang-whiteboard-kantor.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://peralatankantor.web.id/blog/perbandingan-whiteboard-kaca-vs-biasa.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Blog Hari 10: Meja Kantor (Lanjutan) -->
   <url>
     <loc>https://peralatankantor.web.id/blog/tips-menjaga-meja-kantor-bersih-rapi.html</loc>
