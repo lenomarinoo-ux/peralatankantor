@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -30,6 +30,22 @@
 
   <!-- Main CSS -->
   <link href="../assets/css/main.css?v=128" rel="stylesheet">
+  <!-- Article Featured Image: responsive 16:9 landscape -->
+  <style>
+    .article-featured-img-wrap {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+    .article-featured-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -152,11 +168,9 @@
               Macam-Macam Peralatan Kantor untuk Operasional Bulanan</h2>
 
             <!-- Featured Image -->
-            <div class="mb-4 rounded-4 overflow-hidden" style="max-height:420px;">
-              <img src="../assets/img/blog/jenis-peralatan-kantor.webp"
+            <div class="article-featured-img-wrap"><img src="../assets/img/blog/jenis-peralatan-kantor.webp"
                 alt="Berbagai jenis peralatan kantor mulai dari ATK furniture hingga videotron dalam satu ruang kerja modern"
-                class="img-fluid w-100" style="object-fit:cover;height:420px;">
-            </div>
+                class="img-fluid w-100" ></div>
 
                         <!-- Table of Contents -->
             <div class="toc-box" id="toc-macam">
@@ -188,7 +202,8 @@
             </div>
 
             <div class="article-content">
-              <p>Peralatan kantor untuk operasional bulanan terbagi dalam lima kategori utama: alat tulis kantor (ATK), furniture kerja (meja & kursi), peralatan penyimpanan (lemari arsip), perlengkapan pendukung (whiteboard, tempat sampah, dsb), dan peralatan display (videotron/proyektor).</p>
+              <p>Peralatan kantor untuk operasional bulanan terbagi dalam lima kategori utama:</p>
+              <p>Alat tulis kantor (ATK), furniture kerja (meja & kursi), peralatan penyimpanan (lemari arsip), perlengkapan pendukung (whiteboard, tempat sampah, dsb), dan peralatan display (videotron/proyektor).</p>
               <p>Anggaran bulanan idealnya dialokasikan per kategori agar pengadaan rutin (ATK) tidak tercampur dengan pengadaan aset (furniture, videotron) yang siklusnya lebih panjang.</p>
               
               <p>Bagi tim procurement, menyusun daftar pengadaan bulanan sering kali membingungkan karena kebutuhan kantor sangat beragam - mulai dari kertas dan pulpen yang habis tiap bulan, hingga furniture yang hanya diganti sekali beberapa tahun.</p>

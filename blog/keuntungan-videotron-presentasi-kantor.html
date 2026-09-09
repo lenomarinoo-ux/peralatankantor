@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -30,6 +30,22 @@
 
   <!-- Main CSS -->
   <link href="../assets/css/main.css?v=128" rel="stylesheet">
+  <!-- Article Featured Image: responsive 16:9 landscape -->
+  <style>
+    .article-featured-img-wrap {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+    .article-featured-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -145,11 +161,9 @@
               5 Keuntungan Menggunakan Videotron Media Presentasi Kantor</h2>
 
             <!-- Featured Image -->
-            <div class="mb-4 rounded-4 overflow-hidden" style="max-height:420px;">
-              <img src="../assets/img/blog/videotron-presentasi-ruangan-terang.webp"
+            <div class="article-featured-img-wrap"><img src="../assets/img/blog/videotron-presentasi-ruangan-terang.webp"
                 alt="Videotron ruang meeting tetap jelas terlihat meski ruangan terang oleh cahaya matahari"
-                class="img-fluid w-100" style="object-fit:cover;height:420px;">
-            </div>
+                class="img-fluid w-100" ></div>
 
             <!-- Table of Contents -->
             <div class="toc-box" id="toc-keuntungan-videotron">

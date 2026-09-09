@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -30,6 +30,22 @@
 
   <!-- Main CSS -->
   <link href="../assets/css/main.css?v=128" rel="stylesheet">
+  <!-- Article Featured Image: responsive 16:9 landscape -->
+  <style>
+    .article-featured-img-wrap {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+    .article-featured-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -152,11 +168,9 @@
               5 Tips Menghemat Anggaran ATK Kantor Tanpa Turun Kualitas</h2>
 
             <!-- Featured Image -->
-            <div class="mb-4 rounded-4 overflow-hidden" style="max-height:420px;">
-              <img src="../assets/img/blog/hemat-anggaran-atk.webp"
+            <div class="article-featured-img-wrap"><img src="../assets/img/blog/hemat-anggaran-atk.webp"
                 alt="Karyawan menghitung dan menata stok alat tulis kantor di gudang penyimpanan untuk menghemat anggaran"
-                class="img-fluid w-100" style="object-fit:cover;height:420px;">
-            </div>
+                class="img-fluid w-100" ></div>
 
                         <!-- Table of Contents -->
             <div class="toc-box" id="toc-hemat">
@@ -188,7 +202,8 @@
             </div>
 
             <div class="article-content">
-              <p>Lima cara utama menghemat anggaran ATK kantor adalah: beli dalam skema grosir/kontrak tahunan, standardisasi merek per kategori, kontrol stok terpusat, gunakan sistem checkout ATK internal, dan pilih vendor dengan sistem pengiriman rutin (subscription).</p>
+              <p>Lima cara utama menghemat anggaran ATK kantor adalah:</p>
+              <p>Beli dalam skema grosir/kontrak tahunan, standardisasi merek per kategori, kontrol stok terpusat, gunakan sistem checkout ATK internal, dan pilih vendor dengan sistem pengiriman rutin (subscription).</p>
               <p>Kombinasi kelima cara ini bisa memangkas biaya ATK bulanan hingga 15-30% tanpa mengorbankan kualitas barang yang dipakai karyawan.</p>
               
               <p>Anggaran ATK kantor sering membengkak bukan karena harga barangnya mahal, tapi karena proses pembelian yang tidak terstruktur - pembelian dadakan, stok menumpuk di satu divisi sementara divisi lain kehabisan, atau tidak ada standar merek sehingga harga bervariasi tiap pembelian.</p>

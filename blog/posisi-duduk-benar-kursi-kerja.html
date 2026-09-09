@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -30,6 +30,22 @@
 
   <!-- Main CSS -->
   <link href="../assets/css/main.css?v=128" rel="stylesheet">
+  <!-- Article Featured Image: responsive 16:9 landscape -->
+  <style>
+    .article-featured-img-wrap {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+    .article-featured-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -145,11 +161,9 @@
               Cara Mengatur Posisi Duduk yang Benar di Kursi Kerja</h2>
 
             <!-- Featured Image -->
-            <div class="mb-4 rounded-4 overflow-hidden" style="max-height:420px;">
-              <img src="../assets/img/blog/posisi-duduk-ergonomis-kursi.webp"
+            <div class="article-featured-img-wrap"><img src="../assets/img/blog/posisi-duduk-ergonomis-kursi.webp"
                 alt="Posisi duduk ergonomis yang benar di kursi kerja dengan postur tubuh sejajar"
-                class="img-fluid w-100" style="object-fit:cover;height:420px;">
-            </div>
+                class="img-fluid w-100" ></div>
 
             <!-- Table of Contents -->
             <div class="toc-box" id="toc-posisi-duduk">
@@ -215,7 +229,8 @@
               </a>
 
               <h3 id="pentingnya-jeda">Pentingnya Jeda dan Perubahan Posisi</h3>
-              <p>Selain pengaturan posisi yang tepat, duduk dalam satu posisi statis terlalu lama tetap berisiko menimbulkan kekakuan otot, meski kursi dan posisi duduknya sudah benar. Disarankan untuk berdiri atau bergerak sejenak setiap 30-60 menit sekali.</p>
+              <p>Selain pengaturan posisi yang tepat, duduk dalam satu posisi statis terlalu lama tetap berisiko menimbulkan kekakuan otot, meski kursi dan posisi duduknya sudah benar.</p>
+              <p>Disarankan untuk berdiri atau bergerak sejenak setiap 30-60 menit sekali.</p>
 
               <h2 id="menyesuaikan-pekerjaan">Menyesuaikan Posisi Duduk dengan Jenis Pekerjaan</h2>
               <p>Karyawan dengan pekerjaan yang membutuhkan banyak mengetik mungkin perlu lebih memperhatikan posisi pergelangan tangan agar tetap lurus saat mengetik, sementara karyawan yang sering melakukan panggilan telepon perlu memperhatikan posisi leher agar tidak menjepit telepon di antara bahu dan telinga.</p>

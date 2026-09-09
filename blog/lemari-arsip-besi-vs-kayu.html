@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -30,6 +30,22 @@
 
   <!-- Main CSS -->
   <link href="../assets/css/main.css?v=128" rel="stylesheet">
+  <!-- Article Featured Image: responsive 16:9 landscape -->
+  <style>
+    .article-featured-img-wrap {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+    .article-featured-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -145,11 +161,9 @@
               Lemari Arsip Besi vs Kayu: Mana Terbaik untuk Dokumen?</h2>
 
             <!-- Featured Image -->
-            <div class="mb-4 rounded-4 overflow-hidden" style="max-height:420px;">
-              <img src="../assets/img/blog/lemari-arsip-besi-vs-kayu-perbandingan.webp"
+            <div class="article-featured-img-wrap"><img src="../assets/img/blog/lemari-arsip-besi-vs-kayu-perbandingan.webp"
                 alt="Perbandingan lemari arsip besi dan kayu untuk penyimpanan dokumen kantor"
-                class="img-fluid w-100" style="object-fit:cover;height:420px;" onerror="this.src='../assets/img/blog/lemari-arsip-besi-vs-kayu-perbandingan.jpg'; this.onerror=null;">
-            </div>
+                class="img-fluid w-100"  onerror="this.src='../assets/img/blog/lemari-arsip-besi-vs-kayu-perbandingan.jpg'; this.onerror=null;"></div>
 
             <!-- Table of Contents -->
             <div class="toc-box" id="toc-lemari-arsip-besi-kayu">
@@ -225,14 +239,16 @@
               <p>Kondisi iklim tropis Indonesia dengan kelembapan tinggi sepanjang tahun menjadi pertimbangan penting saat memilih material lemari arsip.</p>
 
               <h2 id="perawatan">Perawatan yang Dibutuhkan Masing-Masing Material</h2>
-              <p>Lemari besi membutuhkan perawatan minimal, umumnya cukup dibersihkan dari debu secara berkala. Lemari kayu membutuhkan perawatan lebih intensif, termasuk menghindari paparan sinar matahari langsung dan perlakuan anti rayap berkala.</p>
+              <p>Lemari besi membutuhkan perawatan minimal, umumnya cukup dibersihkan dari debu secara berkala.</p>
+              <p>Lemari kayu membutuhkan perawatan lebih intensif, termasuk menghindari paparan sinar matahari langsung dan perlakuan anti rayap berkala.</p>
 
               <h3 id="tanda-kerusakan">Tanda Kerusakan yang Perlu Diwaspadai pada Kedua Material</h3>
               <p>Pada lemari besi, tanda kerusakan yang perlu diwaspadai antara lain munculnya karat atau engsel yang mulai seret.</p>
               <p>Pada lemari kayu, tanda peringatan meliputi permukaan lembap, lubang bekas rayap, atau sambungan kayu yang longgar.</p>
 
               <h2 id="anggaran">Pertimbangan Anggaran dan Garansi</h2>
-              <p>Lemari arsip besi dengan spesifikasi standar umumnya memiliki garansi untuk komponen kunci dan engsel. Lemari kayu premium terkadang menawarkan garansi terbatas untuk kerusakan struktural.</p>
+              <p>Lemari arsip besi dengan spesifikasi standar umumnya memiliki garansi untuk komponen kunci dan engsel.</p>
+              <p>Lemari kayu premium terkadang menawarkan garansi terbatas untuk kerusakan struktural.</p>
               <p>Peralatan Kantor menyediakan lemari arsip besi dan kayu dengan garansi resmi sesuai kebutuhan Anda. Hubungi kami via WhatsApp untuk konsultasi.</p>
 
             </div><!-- /article-content -->

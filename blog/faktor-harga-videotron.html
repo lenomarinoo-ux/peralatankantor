@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -30,6 +30,22 @@
 
   <!-- Main CSS -->
   <link href="../assets/css/main.css?v=128" rel="stylesheet">
+  <!-- Article Featured Image: responsive 16:9 landscape -->
+  <style>
+    .article-featured-img-wrap {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+    .article-featured-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -152,11 +168,9 @@
               Faktor-Faktor yang Mempengaruhi Harga Videotron di Pasaran</h2>
 
             <!-- Featured Image -->
-            <div class="mb-4 rounded-4 overflow-hidden" style="max-height:420px;">
-              <img src="../assets/img/blog/videotron-modul-panel-harga.webp"
+            <div class="article-featured-img-wrap"><img src="../assets/img/blog/videotron-modul-panel-harga.webp"
                 alt="Modul panel LED videotron menunjukkan detail komponen dan kerapatan piksel"
-                class="img-fluid w-100" style="object-fit:cover;height:420px;">
-            </div>
+                class="img-fluid w-100" ></div>
 
             <!-- Table of Contents -->
             <div class="toc-box" id="toc-video">
@@ -225,7 +239,8 @@
               </a>
 
               <h3 id="skala">Pengaruh Skala Pemesanan terhadap Harga</h3>
-              <p>Selain kelima faktor di atas, skala pemesanan juga bisa memengaruhi harga per unit. Pemesanan videotron dalam jumlah besar atau untuk proyek dengan luas layar yang signifikan biasanya mendapatkan harga yang lebih kompetitif per meter persegi dibanding pemesanan dalam skala kecil.</p>
+              <p>Selain kelima faktor di atas, skala pemesanan juga bisa memengaruhi harga per unit.</p>
+              <p>Pemesanan videotron dalam jumlah besar atau untuk proyek dengan luas layar yang signifikan biasanya mendapatkan harga yang lebih kompetitif per meter persegi dibanding pemesanan dalam skala kecil.</p>
 
               <h2 id="memperkirakan">Cara Memperkirakan Anggaran Videotron</h2>
               <p>Sebelum menghubungi vendor, tim procurement bisa menyusun perkiraan awal anggaran dengan menentukan terlebih dahulu lokasi pemasangan (indoor/outdoor), estimasi luas layar yang dibutuhkan, serta jarak pandang audiens untuk menentukan pixel pitch yang sesuai.</p>

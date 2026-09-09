@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -30,6 +30,22 @@
 
   <!-- Main CSS -->
   <link href="../assets/css/main.css?v=128" rel="stylesheet">
+  <!-- Article Featured Image: responsive 16:9 landscape -->
+  <style>
+    .article-featured-img-wrap {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+    .article-featured-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -152,11 +168,9 @@
               Mengapa Kursi Ergonomis Sangat Penting untuk Karyawan WFH?</h2>
 
             <!-- Featured Image -->
-            <div class="mb-4 rounded-4 overflow-hidden" style="max-height:420px;">
-              <img src="../assets/img/blog/kursi-ergonomis-wfh.webp"
+            <div class="article-featured-img-wrap"><img src="../assets/img/blog/kursi-ergonomis-wfh.webp"
                 alt="Karyawan bekerja dari rumah menggunakan kursi ergonomis untuk menjaga postur tubuh"
-                class="img-fluid w-100" style="object-fit:cover;height:420px;">
-            </div>
+                class="img-fluid w-100" ></div>
 
             <!-- Table of Contents -->
             <div class="toc-box" id="toc-wfh">
@@ -198,11 +212,13 @@
               </a>
 
               <h2 id="risiko-kesehatan">Risiko Kesehatan dari Kursi yang Tidak Ergonomis</h2>
-              <p>Duduk dalam posisi yang tidak didukung penyangga punggung yang tepat selama berjam-jam dapat menyebabkan otot punggung bawah bekerja berlebihan untuk menopang tubuh. Dalam jangka pendek, ini menimbulkan pegal dan kelelahan otot.</p>
+              <p>Duduk dalam posisi yang tidak didukung penyangga punggung yang tepat selama berjam-jam dapat menyebabkan otot punggung bawah bekerja berlebihan untuk menopang tubuh.</p>
+              <p>Dalam jangka pendek, ini menimbulkan pegal dan kelelahan otot.</p>
               <p>Dalam jangka panjang, kebiasaan ini bisa berkembang menjadi nyeri kronis, postur tubuh membungkuk, hingga tekanan berlebih pada saraf tulang belakang yang memicu nyeri menjalar ke kaki.</p>
 
               <h2 id="kenapa-perusahaan-peduli">Kenapa Perusahaan Perlu Peduli pada Kursi Kerja Karyawan WFH</h2>
-              <p>Meski karyawan bekerja dari rumah, kondisi kesehatan mereka tetap berdampak langsung pada produktivitas dan tingkat absensi kerja. Karyawan yang mengalami nyeri punggung kronis akibat kursi kerja yang buruk cenderung lebih sering mengambil cuti sakit dan mengalami penurunan fokus saat bekerja.</p>
+              <p>Meski karyawan bekerja dari rumah, kondisi kesehatan mereka tetap berdampak langsung pada produktivitas dan tingkat absensi kerja.</p>
+              <p>Karyawan yang mengalami nyeri punggung kronis akibat kursi kerja yang buruk cenderung lebih sering mengambil cuti sakit dan mengalami penurunan fokus saat bekerja.</p>
               <p>Beberapa perusahaan mulai memasukkan tunjangan atau fasilitas kursi ergonomis sebagai bagian dari kebijakan kesejahteraan karyawan remote.</p>
 
               <h2 id="spesifikasi-wfh">Spesifikasi Kursi yang Perlu Diperhatikan Saat Kerja dari Rumah</h2>

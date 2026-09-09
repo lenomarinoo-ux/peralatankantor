@@ -30,6 +30,22 @@
 
   <!-- Main CSS -->
   <link href="../assets/css/main.css?v=128" rel="stylesheet">
+  <!-- Article Featured Image: responsive 16:9 landscape -->
+  <style>
+    .article-featured-img-wrap {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+    .article-featured-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -145,11 +161,9 @@
               Perbandingan Papan Tulis Whiteboard Kaca vs Whiteboard Biasa</h2>
 
             <!-- Featured Image -->
-            <div class="mb-4 rounded-4 overflow-hidden" style="max-height:420px;">
-              <img src="../assets/img/blog/whiteboard-kaca-vs-biasa.webp"
+            <div class="article-featured-img-wrap"><img src="../assets/img/blog/whiteboard-kaca-vs-biasa.webp"
                 alt="Perbandingan whiteboard kaca dan whiteboard biasa di dinding kantor"
-                class="img-fluid w-100" style="object-fit:cover;height:420px;">
-            </div>
+                class="img-fluid w-100" ></div>
 
             <!-- Table of Contents -->
             <div class="toc-box" id="toc-perbandingan-whiteboard">
@@ -220,7 +234,8 @@
               <p>Banyak kantor tidak memilih salah satu secara eksklusif, melainkan mengombinasikan keduanya sesuai fungsi ruang.</p>
 
               <h2 id="perawatan">Perawatan yang Dibutuhkan Masing-Masing Jenis</h2>
-              <p>Whiteboard kaca relatif mudah dirawat, cukup dilap dengan cairan pembersih kaca standar. Whiteboard biasa membutuhkan perawatan lebih hati-hati, terutama menghindari penggunaan spidol permanen yang sulit dihapus.</p>
+              <p>Whiteboard kaca relatif mudah dirawat, cukup dilap dengan cairan pembersih kaca standar.</p>
+              <p>Whiteboard biasa membutuhkan perawatan lebih hati-hati, terutama menghindari penggunaan spidol permanen yang sulit dihapus.</p>
               
               <h3 id="ukuran">Mempertimbangkan Ukuran dan Ketebalan Kaca</h3>
               <p>Bagi kantor yang memutuskan memilih whiteboard kaca, ketebalan kaca menjadi faktor penting yang memengaruhi daya tahan dan keamanan pemasangan.</p>

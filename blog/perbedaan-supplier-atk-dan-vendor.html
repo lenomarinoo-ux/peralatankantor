@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -30,6 +30,22 @@
 
   <!-- Main CSS -->
   <link href="../assets/css/main.css?v=128" rel="stylesheet">
+  <!-- Article Featured Image: responsive 16:9 landscape -->
+  <style>
+    .article-featured-img-wrap {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+    .article-featured-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
@@ -145,11 +161,9 @@
               Perbedaan Supplier ATK dan Vendor Pengadaan B2B Korporat</h2>
 
             <!-- Featured Image -->
-            <div class="mb-4 rounded-4 overflow-hidden" style="max-height:420px;">
-              <img src="../assets/img/blog/supplier-atk-vendor-b2b-korporat.webp"
+            <div class="article-featured-img-wrap"><img src="../assets/img/blog/supplier-atk-vendor-b2b-korporat.webp"
                 alt="Proses pengadaan ATK dari vendor B2B dengan dokumen pengiriman korporat"
-                class="img-fluid w-100" style="object-fit:cover;height:420px;" onerror="this.src='../assets/img/blog/supplier-atk-vendor-b2b-korporat.jpg'; this.onerror=null;">
-            </div>
+                class="img-fluid w-100"  onerror="this.src='../assets/img/blog/supplier-atk-vendor-b2b-korporat.jpg'; this.onerror=null;"></div>
 
             <!-- Table of Contents -->
             <div class="toc-box" id="toc-supplier-atk-vendor">
@@ -231,7 +245,8 @@
               <p>Kesalahan yang sering terjadi adalah memilih mitra hanya berdasarkan harga termurah tanpa mempertimbangkan kapasitas pasokan jangka panjang.</p>
               <p>Kesalahan lain yang umum adalah tidak memverifikasi legalitas dokumen sebelum menandatangani kontrak, serta tidak mengevaluasi ulang mitra pengadaan secara berkala.</p>
               <p>Setelah menemukan vendor pengadaan B2B yang sesuai, membangun hubungan kerja sama jangka panjang memberikan keuntungan tambahan seperti harga yang lebih kompetitif seiring waktu.</p>
-              <p>Peralatan Kantor merupakan vendor pengadaan B2B dengan legalitas lengkap dan katalog produk yang beragam untuk kebutuhan korporat Anda. Hubungi kami via WhatsApp untuk konsultasi dan penawaran terbaik.</p>
+              <p>Peralatan Kantor merupakan vendor pengadaan B2B dengan legalitas lengkap dan katalog produk yang beragam untuk kebutuhan korporat Anda.</p>
+              <p>Hubungi kami via WhatsApp untuk konsultasi dan penawaran terbaik.</p>
 
             </div><!-- /article-content -->
 

@@ -605,6 +605,25 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Blog Hari 15: Lemari Arsip (Lanjutan) -->
+  <url>
+    <loc>https://peralatankantor.web.id/blog/perbedaan-lemari-sliding-vs-swing.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://peralatankantor.web.id/blog/spesifikasi-lemari-arsip-tahan-api.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://peralatankantor.web.id/blog/review-lemari-loker-karyawan.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
 
 

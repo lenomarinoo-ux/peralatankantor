@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -30,6 +30,22 @@
 
   <!-- Main CSS -->
   <link href="../assets/css/main.css?v=128" rel="stylesheet">
+  <!-- Article Featured Image: responsive 16:9 landscape -->
+  <style>
+    .article-featured-img-wrap {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+    .article-featured-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -145,11 +161,9 @@
               Mengenal Tinggi Meja Standar untuk Postur Kerja Ergonomis</h2>
 
             <!-- Featured Image -->
-            <div class="mb-4 rounded-4 overflow-hidden" style="max-height:420px;">
-              <img src="../assets/img/blog/tinggi-meja-standar-ergonomis.webp"
+            <div class="article-featured-img-wrap"><img src="../assets/img/blog/tinggi-meja-standar-ergonomis.webp"
                 alt="Pengukuran tinggi meja kantor standar untuk postur kerja ergonomis"
-                class="img-fluid w-100" style="object-fit:cover;height:420px;" onerror="this.src='../assets/img/blog/tinggi-meja-standar-ergonomis.jpg'; this.onerror=null;">
-            </div>
+                class="img-fluid w-100"  onerror="this.src='../assets/img/blog/tinggi-meja-standar-ergonomis.jpg'; this.onerror=null;"></div>
 
             <!-- Table of Contents -->
             <div class="toc-box" id="toc-tinggi-meja-standar-ergonomis">
@@ -214,7 +228,8 @@
 
               <h2 id="tanda">Apa Saja Tanda Meja Kantor Sudah Tidak Sesuai dengan Postur Pengguna?</h2>
               <p>Tanda meja kantor sudah tidak sesuai dengan postur pengguna meliputi keluhan pegal di bahu atau leher setiap sore hari, kebiasaan sering membungkuk saat mengetik, dan pergelangan tangan yang terasa tegang setelah bekerja beberapa jam.</p>
-              <p>Peralatan Kantor menyediakan meja kantor dengan berbagai pilihan tinggi dan meja adjustable sesuai kebutuhan postur tim Anda. Hubungi kami via WhatsApp untuk konsultasi dan penawaran terbaik.</p>
+              <p>Peralatan Kantor menyediakan meja kantor dengan berbagai pilihan tinggi dan meja adjustable sesuai kebutuhan postur tim Anda.</p>
+              <p>Hubungi kami via WhatsApp untuk konsultasi dan penawaran terbaik.</p>
 
             </div><!-- /article-content -->
 

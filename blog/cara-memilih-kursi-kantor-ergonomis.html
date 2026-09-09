@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -30,6 +30,22 @@
 
   <!-- Main CSS -->
   <link href="../assets/css/main.css?v=128" rel="stylesheet">
+  <!-- Article Featured Image: responsive 16:9 landscape -->
+  <style>
+    .article-featured-img-wrap {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+    .article-featured-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -152,11 +168,9 @@
               Cara Memilih Kursi Kantor Ergonomis untuk Hindari Sakit Punggung</h2>
 
             <!-- Featured Image -->
-            <div class="mb-4 rounded-4 overflow-hidden" style="max-height:420px;">
-              <img src="../assets/img/blog/kursi-kantor-ergonomis.webp"
+            <div class="article-featured-img-wrap"><img src="../assets/img/blog/kursi-kantor-ergonomis.webp"
                 alt="Kursi kantor ergonomis dengan sandaran mesh dan lumbar support di ruang kerja modern"
-                class="img-fluid w-100" style="object-fit:cover;height:420px;">
-            </div>
+                class="img-fluid w-100" ></div>
 
             <!-- Table of Contents -->
             <div class="toc-box" id="toc-ergonomis">
@@ -197,7 +211,8 @@
               </a>
 
               <h2 id="kenapa-ergonomi-penting">Kenapa Ergonomi Kursi Kantor Itu Penting</h2>
-              <p>Tubuh manusia tidak dirancang untuk duduk statis dalam waktu lama. Ketika kursi tidak menopang postur alami tulang belakang, otot-otot di sekitar punggung dan leher akan bekerja lebih keras untuk menahan beban tubuh, sehingga menimbulkan kelelahan otot dan nyeri yang terakumulasi dari hari ke hari.</p>
+              <p>Tubuh manusia tidak dirancang untuk duduk statis dalam waktu lama.</p>
+              <p>Ketika kursi tidak menopang postur alami tulang belakang, otot-otot di sekitar punggung dan leher akan bekerja lebih keras untuk menahan beban tubuh, sehingga menimbulkan kelelahan otot dan nyeri yang terakumulasi dari hari ke hari.</p>
               <p>Bagi perusahaan, investasi pada kursi ergonomis juga berdampak pada produktivitas karena karyawan yang nyaman duduk cenderung lebih fokus dan jarang izin sakit akibat keluhan muskuloskeletal.</p>
 
               <h2 id="komponen-wajib">Komponen yang Wajib Diperhatikan</h2>

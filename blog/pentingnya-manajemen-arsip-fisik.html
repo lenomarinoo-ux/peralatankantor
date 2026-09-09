@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -30,6 +30,22 @@
 
   <!-- Main CSS -->
   <link href="../assets/css/main.css?v=128" rel="stylesheet">
+  <!-- Article Featured Image: responsive 16:9 landscape -->
+  <style>
+    .article-featured-img-wrap {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+    .article-featured-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -152,11 +168,9 @@
               Pentingnya Manajemen Arsip Fisik untuk Keamanan Dokumen</h2>
 
             <!-- Featured Image -->
-            <div class="mb-4 rounded-4 overflow-hidden" style="max-height:420px;">
-              <img src="../assets/img/blog/folder-arsip-label-warna.webp"
+            <div class="article-featured-img-wrap"><img src="../assets/img/blog/folder-arsip-label-warna.webp"
                 alt="Manajemen arsip fisik dengan folder gantung berlabel warna untuk keamanan dokumen"
-                class="img-fluid w-100" style="object-fit:cover;height:420px;">
-            </div>
+                class="img-fluid w-100" ></div>
 
             <!-- Table of Contents -->
             <div class="toc-box" id="toc-arsip">
@@ -191,7 +205,8 @@
             </div>
 
             <div class="article-content">
-              <p>Manajemen arsip fisik yang baik mencakup empat aspek utama: sistem klasifikasi dokumen yang konsisten, kontrol akses terbatas untuk dokumen sensitif, penyimpanan pada lemari yang sesuai standar keamanan, dan jadwal retensi/pemusnahan dokumen yang jelas.</p>
+              <p>Manajemen arsip fisik yang baik mencakup empat aspek utama:</p>
+              <p>Sistem klasifikasi dokumen yang konsisten, kontrol akses terbatas untuk dokumen sensitif, penyimpanan pada lemari yang sesuai standar keamanan, dan jadwal retensi/pemusnahan dokumen yang jelas.</p>
               <p>Perusahaan dengan sistem manajemen arsip yang tertata dapat mengurangi risiko kehilangan dokumen penting hingga signifikan, sekaligus mempercepat proses audit dan pencarian berkas saat dibutuhkan.</p>
               <p>Banyak perusahaan menganggap dokumen fisik sudah kurang relevan di era digital, padahal untuk dokumen legal, kontrak, dan berkas keuangan tertentu, versi fisik masih menjadi acuan sah yang wajib disimpan sesuai regulasi.</p>
               <p>Tanpa sistem manajemen yang jelas, dokumen penting berisiko rusak, hilang, atau diakses oleh pihak yang tidak berwenang.</p>
@@ -218,7 +233,8 @@
               <p>Gunakan kode kategori yang sederhana dan konsisten, misalnya kombinasi huruf untuk kategori dan angka untuk tahun, sehingga pencarian dokumen bisa dilakukan tanpa harus bertanya ke admin arsip setiap saat.</p>
 
               <h3 id="level-akses">Menentukan Level Akses Berdasarkan Sensitivitas Dokumen</h3>
-              <p>Tidak semua dokumen memerlukan tingkat keamanan yang sama. Dokumen operasional harian bisa diakses lebih bebas oleh staff terkait, sementara dokumen dengan tingkat sensitivitas tinggi seperti data gaji karyawan atau kontrak kerahasiaan sebaiknya hanya bisa diakses dengan izin tertulis dari pihak manajemen.</p>
+              <p>Tidak semua dokumen memerlukan tingkat keamanan yang sama.</p>
+              <p>Dokumen operasional harian bisa diakses lebih bebas oleh staff terkait, sementara dokumen dengan tingkat sensitivitas tinggi seperti data gaji karyawan atau kontrak kerahasiaan sebaiknya hanya bisa diakses dengan izin tertulis dari pihak manajemen.</p>
 
               <a href="tips-merapikan-dokumen-kantor.html" class="baca-juga-inline">
                 <span class="baca-juga-label">Baca Juga:</span>
@@ -232,7 +248,8 @@
               <p>Bagi perusahaan yang belum memiliki sistem manajemen arsip terstruktur, langkah awal yang bisa dilakukan adalah melakukan audit dokumen yang ada saat ini, mengelompokkan berdasarkan kategori dan tingkat sensitivitas, lalu menentukan lemari penyimpanan yang sesuai untuk masing-masing kategori.</p>
 
               <h3 id="melibatkan-tim">Melibatkan Tim Lintas Divisi dalam Penyusunan SOP Arsip</h3>
-              <p>Manajemen arsip yang efektif biasanya tidak bisa disusun oleh satu divisi saja. Tim legal, finance, dan HR umumnya memiliki jenis dokumen dengan tingkat sensitivitas dan masa retensi yang berbeda-beda, sehingga penting melibatkan perwakilan dari masing-masing divisi saat menyusun SOP arsip.</p>
+              <p>Manajemen arsip yang efektif biasanya tidak bisa disusun oleh satu divisi saja.</p>
+              <p>Tim legal, finance, dan HR umumnya memiliki jenis dokumen dengan tingkat sensitivitas dan masa retensi yang berbeda-beda, sehingga penting melibatkan perwakilan dari masing-masing divisi saat menyusun SOP arsip.</p>
 
               <h3 id="digitalisasi">Digitalisasi sebagai Pelengkap, Bukan Pengganti Arsip Fisik</h3>
               <p>Banyak perusahaan mulai melakukan digitalisasi dokumen sebagai cara mempercepat pencarian dan mengurangi risiko kehilangan data.</p>
