@@ -9,6 +9,22 @@
 (function() {
   "use strict";
 
+  // Split Hari 18 article sentences before optional vendor scripts initialize.
+  if (/\/(panduan-videotron-event|spesifikasi-brightness-videotron|perbandingan-videotron-cabinet)(\.html)?\/?$/.test(window.location.pathname)) {
+    document.querySelectorAll('.article-content > p').forEach(paragraph => {
+      const sentences = paragraph.textContent.match(/[^.!?]+[.!?]+/g);
+      if (!sentences || sentences.length < 2) return;
+
+      const fragment = document.createDocumentFragment();
+      sentences.forEach(sentence => {
+        const splitParagraph = document.createElement('p');
+        splitParagraph.textContent = sentence.trim();
+        fragment.appendChild(splitParagraph);
+      });
+      paragraph.replaceWith(fragment);
+    });
+  }
+
   /**
    * Apply .scrolled class to the body as the page is scrolled down
    */
@@ -181,5 +197,21 @@
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
+
+  // Keep the Hari 18 article copy easy to scan without changing older articles.
+  if (/\/(panduan-videotron-event|spesifikasi-brightness-videotron|perbandingan-videotron-cabinet)(\.html)?\/?$/.test(window.location.pathname)) {
+    document.querySelectorAll('.article-content > p').forEach(paragraph => {
+      const sentences = paragraph.textContent.match(/[^.!?]+[.!?]+/g);
+      if (!sentences || sentences.length < 2) return;
+
+      const fragment = document.createDocumentFragment();
+      sentences.forEach(sentence => {
+        const splitParagraph = document.createElement('p');
+        splitParagraph.textContent = sentence.trim();
+        fragment.appendChild(splitParagraph);
+      });
+      paragraph.replaceWith(fragment);
+    });
+  }
 
 })();
