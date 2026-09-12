@@ -1367,6 +1367,28 @@
           </div>
 
 
+          <!-- Batch Hari 18: Videotron (Lanjutan) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <article class="blog-card">
+              <div class="blog-img"><img src="assets/img/blog/panduan-videotron-event.webp" alt="Videotron modular dan portable untuk kebutuhan panggung event" loading="lazy"></div>
+              <div class="blog-body"><div class="blog-meta"><img src="assets/img/penulis-artikel-admin-peralatan-kantor.webp" alt="Admin Peralatan Kantor, penulis artikel tips pengadaan kantor" class="blog-author-img"><div><span class="blog-date" style="font-size:13px !important;"><i class="bi bi-calendar3 me-1"></i>12 September 2026</span></div></div><span class="badge-kategori mb-2 d-inline-block">Videotron</span><h4><a href="blog/panduan-videotron-event.html">Panduan Memilih Videotron untuk Event: Modular vs Portable</a></h4><p>Bingung memilih videotron modular atau portable untuk event? Simak panduan kecepatan bongkar pasang dan kebutuhannya.</p><a href="blog/panduan-videotron-event.html" class="btn-lihat-detail mt-auto">Baca Selengkapnya &rarr;</a></div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <article class="blog-card">
+              <div class="blog-img"><img src="assets/img/blog/spesifikasi-brightness-videotron.webp" alt="Videotron indoor dan outdoor dengan tingkat brightness berbeda" loading="lazy"></div>
+              <div class="blog-body"><div class="blog-meta"><img src="assets/img/penulis-artikel-admin-peralatan-kantor.webp" alt="Admin Peralatan Kantor, penulis artikel tips pengadaan kantor" class="blog-author-img"><div><span class="blog-date" style="font-size:13px !important;"><i class="bi bi-calendar3 me-1"></i>12 September 2026</span></div></div><span class="badge-kategori mb-2 d-inline-block">Videotron</span><h4><a href="blog/spesifikasi-brightness-videotron.html">Spesifikasi Brightness Videotron Indoor vs Outdoor yang Ideal</a></h4><p>Cari tahu tingkat brightness videotron indoor dan outdoor yang ideal agar gambar jelas dan mata tetap nyaman.</p><a href="blog/spesifikasi-brightness-videotron.html" class="btn-lihat-detail mt-auto">Baca Selengkapnya &rarr;</a></div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <article class="blog-card">
+              <div class="blog-img"><img src="assets/img/blog/perbandingan-videotron-cabinet.webp" alt="Perbandingan kabinet videotron besi dan die-cast aluminum" loading="lazy"></div>
+              <div class="blog-body"><div class="blog-meta"><img src="assets/img/penulis-artikel-admin-peralatan-kantor.webp" alt="Admin Peralatan Kantor, penulis artikel tips pengadaan kantor" class="blog-author-img"><div><span class="blog-date" style="font-size:13px !important;"><i class="bi bi-calendar3 me-1"></i>12 September 2026</span></div></div><span class="badge-kategori mb-2 d-inline-block">Videotron</span><h4><a href="blog/perbandingan-videotron-cabinet.html">Perbandingan Videotron Cabinet Iron vs Die-Cast Aluminum</a></h4><p>Bandingkan bobot, presisi, dan daya tahan kabinet sebelum memutuskan pengadaan videotron.</p><a href="blog/perbandingan-videotron-cabinet.html" class="btn-lihat-detail mt-auto">Baca Selengkapnya &rarr;</a></div>
+            </article>
+          </div>
+
           <!-- Artikel dihapus -->
 
           <!-- Artikel 2 dihapus -->
@@ -1497,6 +1519,13 @@
     const container = document.getElementById('blog-list-container');
     if (!container) return;
     
+    // Keep the newest article batch on the first page of the blog grid.
+    const batchSlugs = ['panduan-videotron-event.html', 'spesifikasi-brightness-videotron.html', 'perbandingan-videotron-cabinet.html'];
+    batchSlugs.reverse().forEach(slug => {
+      const item = Array.from(container.children).find(child => child.querySelector(`a[href="blog/${slug}"]`));
+      if (item) container.prepend(item);
+    });
+
     // Select only the article columns
     const items = Array.from(container.children).filter(child => child.classList.contains('col-lg-4'));
     const itemsPerPage = 30; // Limit to 30 items per page

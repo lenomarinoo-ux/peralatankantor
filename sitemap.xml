@@ -644,6 +644,25 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Blog Hari 18: Videotron (Lanjutan) -->
+  <url>
+    <loc>https://peralatankantor.web.id/blog/panduan-videotron-event.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://peralatankantor.web.id/blog/spesifikasi-brightness-videotron.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://peralatankantor.web.id/blog/perbandingan-videotron-cabinet.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
 
 
