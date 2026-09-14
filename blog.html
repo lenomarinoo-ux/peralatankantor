@@ -139,6 +139,61 @@
 <div class="container" data-aos="fade-up">
         <div class="row g-4" id="blog-list-container">
 
+          <!-- Batch Hari 19: Alat Tulis Kantor -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <article class="blog-card">
+              <div class="blog-img">
+                <img src="assets/img/blog/sistem-penyimpanan-atk-rapi.webp" alt="Rak penyimpanan ATK kantor tertata rapi dengan label kategori" loading="lazy" onerror="this.src='assets/img/blog/sistem-penyimpanan-atk-rapi.jpg'; this.onerror=null;">
+              </div>
+              <div class="blog-body">
+                <div class="blog-meta">
+                  <img src="assets/img/penulis-artikel-admin-peralatan-kantor.webp" alt="Meilita Mujayanti, penulis artikel pengadaan peralatan kantor" class="blog-author-img">
+                  <div><span class="blog-date" style="font-size: 13px !important;"><i class="bi bi-calendar3 me-1"></i>14 September 2026</span></div>
+                </div>
+                <span class="badge-kategori mb-2 d-inline-block">Alat Tulis Kantor</span>
+                <h4><a href="blog/sistem-penyimpanan-atk-rapi.html">Cara Membuat Sistem Penyimpanan ATK yang Rapi di Kantor</a></h4>
+                <p>Bingung merapikan penyimpanan ATK kantor? Simak cara menata rak, kategori, dan label agar stok mudah dicek, lalu konsultasikan kebutuhan Anda.</p>
+                <a href="blog/sistem-penyimpanan-atk-rapi.html" class="btn-lihat-detail mt-auto">Baca Selengkapnya &rarr;</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <article class="blog-card">
+              <div class="blog-img">
+                <img src="assets/img/blog/checklist-pengadaan-atk-kantor.webp" alt="Checklist pengadaan ATK kantor akhir tahun untuk GA dan HR" loading="lazy">
+              </div>
+              <div class="blog-body">
+                <div class="blog-meta">
+                  <img src="assets/img/penulis-artikel-admin-peralatan-kantor.webp" alt="Meilita Mujayanti, penulis artikel pengadaan peralatan kantor" class="blog-author-img">
+                  <div><span class="blog-date" style="font-size: 13px !important;"><i class="bi bi-calendar3 me-1"></i>14 September 2026</span></div>
+                </div>
+                <span class="badge-kategori mb-2 d-inline-block">Alat Tulis Kantor</span>
+                <h4><a href="blog/checklist-pengadaan-atk-kantor.html">Checklist Pengadaan ATK Kantor Akhir Tahun untuk GA &amp; HR</a></h4>
+                <p>Siapkan pengadaan ATK akhir tahun untuk GA dan HR dengan checklist lengkap ini. Pastikan tidak ada kebutuhan yang terlewat, lalu konsultasikan sekarang.</p>
+                <a href="blog/checklist-pengadaan-atk-kantor.html" class="btn-lihat-detail mt-auto">Baca Selengkapnya &rarr;</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <article class="blog-card">
+              <div class="blog-img">
+                <img src="assets/img/blog/paket-atk-instansi-pemerintah.webp" alt="Paket ATK untuk instansi pemerintah sesuai standar pengadaan resmi" loading="lazy">
+              </div>
+              <div class="blog-body">
+                <div class="blog-meta">
+                  <img src="assets/img/penulis-artikel-admin-peralatan-kantor.webp" alt="Meilita Mujayanti, penulis artikel pengadaan peralatan kantor" class="blog-author-img">
+                  <div><span class="blog-date" style="font-size: 13px !important;"><i class="bi bi-calendar3 me-1"></i>14 September 2026</span></div>
+                </div>
+                <span class="badge-kategori mb-2 d-inline-block">Alat Tulis Kantor</span>
+                <h4><a href="blog/paket-atk-instansi-pemerintah.html">Paket ATK untuk Instansi Pemerintah: Standar Pengadaan Resmi</a></h4>
+                <p>Cari paket ATK untuk instansi pemerintah sesuai standar pengadaan resmi? Simak panduan kebutuhan dokumen dan spesifikasi sebelum mengajukan.</p>
+                <a href="blog/paket-atk-instansi-pemerintah.html" class="btn-lihat-detail mt-auto">Baca Selengkapnya &rarr;</a>
+              </div>
+            </article>
+          </div>
+
           <!-- Batch Hari 17: Perlengkapan Kantor (Lanjutan) -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up">
             <article class="blog-card">
@@ -1520,7 +1575,14 @@
     if (!container) return;
     
     // Keep the newest article batch on the first page of the blog grid.
-    const batchSlugs = ['panduan-videotron-event.html', 'spesifikasi-brightness-videotron.html', 'perbandingan-videotron-cabinet.html'];
+    const batchSlugs = [
+      'sistem-penyimpanan-atk-rapi.html',
+      'checklist-pengadaan-atk-kantor.html',
+      'paket-atk-instansi-pemerintah.html',
+      'panduan-videotron-event.html',
+      'spesifikasi-brightness-videotron.html',
+      'perbandingan-videotron-cabinet.html'
+    ];
     batchSlugs.reverse().forEach(slug => {
       const item = Array.from(container.children).find(child => child.querySelector(`a[href="blog/${slug}"]`));
       if (item) container.prepend(item);
